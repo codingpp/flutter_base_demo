@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterbasedemo/first_flutter_application.dart';
 import 'package:flutterbasedemo/flutter_layout_page.dart';
 import 'package:flutterbasedemo/less_group_page.dart';
 import 'package:flutterbasedemo/plugin_use.dart';
@@ -90,6 +91,22 @@ class _MyHomePageState extends State<MyHomePage> {
         onTap: () {
           Navigator.push(context,
               new MaterialPageRoute(builder: (context) => new LessGroupPage()));
+        },
+      ),
+      new GestureDetector(
+        child: new Card(
+          child: new Container(
+            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+            child: new Center(
+              child: new Text('编写第一个flutter应用'),
+            ),
+          ),
+        ),
+        onTap: () {
+          Navigator.push(
+              context,
+              new MaterialPageRoute(
+                  builder: (context) => new FirstFlutterApp()));
         },
       )
     ];
