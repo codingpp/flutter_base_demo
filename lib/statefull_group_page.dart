@@ -1,29 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
 ///StateFullWidget与基础组件
-class StateFullGroup extends StatelessWidget {
+class StateFullGroup extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'StateFullWidget与基础组件',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: MyHomePage());
-  }
+  createState() => _MyHomePageState();
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<StateFullGroup> {
   TextStyle textStyle = TextStyle(fontSize: 20, color: Colors.blue);
   int _currentIndex = 0;
 

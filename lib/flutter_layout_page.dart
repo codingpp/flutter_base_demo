@@ -2,28 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
 ///如何进行Flutter布局开发
-class FlutterLayoutPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        title: '如何进行Flutter布局开发',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: MyHomePage());
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class FlutterLayoutPage extends StatefulWidget {
+  FlutterLayoutPage({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<FlutterLayoutPage> {
   TextStyle textStyle = TextStyle(fontSize: 20, color: Colors.blue);
   int _currentIndex = 0;
 
@@ -178,7 +166,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: BoxDecoration(color: Colors.red),
                     child: Text('拉伸填满高度'),
                   ),
-
                 ),
               ],
             ),
