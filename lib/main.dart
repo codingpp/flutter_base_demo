@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterbasedemo/cookbook/theme_page.dart';
 import 'package:flutterbasedemo/first_flutter_application.dart';
 import 'package:flutterbasedemo/flutter_layout_page.dart';
 import 'package:flutterbasedemo/less_group_page.dart';
@@ -107,6 +108,19 @@ class _MyHomePageState extends State<MyHomePage> {
               context,
               new MaterialPageRoute(
                   builder: (context) => new FirstFlutterApp()));
+        },
+      ),
+      new GestureDetector(
+        child: new Card(
+          child: new Container(
+            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+            child: new Center(
+              child: new Text('使用主题共享颜色和字体样式'),
+            ),
+          ),
+        ),
+        onTap: (){
+          Navigator.push(context, new MaterialPageRoute(builder: (context)=>new ImagePage()));
         },
       )
     ];
