@@ -115,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: new Container(
             padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
             child: new Center(
-              child: new Text('使用主题共享颜色和字体样式'),
+              child: new Text('网络图片'),
             ),
           ),
         ),
