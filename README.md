@@ -1,6 +1,6 @@
 # flutterbasedemo
 
-A new Flutter application.
+flutter入门大杂烩.
 
 ## Getting Started
 
