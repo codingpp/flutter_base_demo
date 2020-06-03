@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterbasedemo/cookbook/base_list.dart';
 import 'package:flutterbasedemo/cookbook/theme_page.dart';
 import 'package:flutterbasedemo/first_flutter_application.dart';
 import 'package:flutterbasedemo/flutter_layout_page.dart';
@@ -119,8 +120,23 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ),
-        onTap: (){
-          Navigator.push(context, new MaterialPageRoute(builder: (context)=>new ImagePage()));
+        onTap: () {
+          Navigator.push(context,
+              new MaterialPageRoute(builder: (context) => new ImagePage()));
+        },
+      ),
+      new GestureDetector(
+        child: new Card(
+          child: new Container(
+            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+            child: new Center(
+              child: new Text('基本List'),
+            ),
+          ),
+        ),
+        onTap: () {
+          Navigator.push(context,
+              new MaterialPageRoute(builder: (context) => new BaseList()));
         },
       )
     ];
