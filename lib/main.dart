@@ -6,6 +6,7 @@ import 'package:flutterbasedemo/flutter_layout_page.dart';
 import 'package:flutterbasedemo/less_group_page.dart';
 import 'package:flutterbasedemo/plugin_use.dart';
 import 'package:flutterbasedemo/statefull_group_page.dart';
+import 'package:flutterbasedemo/tabbar/TabBarPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -137,6 +138,20 @@ class _MyHomePageState extends State<MyHomePage> {
         onTap: () {
           Navigator.push(context,
               new MaterialPageRoute(builder: (context) => new BaseList()));
+        },
+      ),
+      new GestureDetector(
+        child: new Card(
+          child: new Container(
+            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+            child: new Center(
+              child: Text('底部BottomNavigationBar'),
+            ),
+          ),
+        ),
+        onTap: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => TabBarPage()));
         },
       )
     ];
