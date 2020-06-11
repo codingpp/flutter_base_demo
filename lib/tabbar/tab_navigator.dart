@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterbasedemo/tabbar/content_pager.dart';
 
 ///底部导航栏
 class TabNavigator extends StatefulWidget {
@@ -23,12 +24,7 @@ class _TabNavigatorState extends State<TabNavigator> {
                 colors: [Color(0xffedeef0), Color(0xffe6e7e9)],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter)),
-        child: Center(
-          child: Text(
-            '您点击了第$_currentIndex个tab',
-            style: TextStyle(fontSize: 36, color: Colors.blue),
-          ),
-        ),
+        child: Center(child: ContentPager()),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterbasedemo/tabbar/TabNavigator.dart';
+import 'package:flutterbasedemo/tabbar/tab_navigator.dart';
 
 class TabBarPage extends StatelessWidget {
   @override

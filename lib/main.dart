@@ -6,7 +6,7 @@ import 'package:flutterbasedemo/flutter_layout_page.dart';
 import 'package:flutterbasedemo/less_group_page.dart';
 import 'package:flutterbasedemo/plugin_use.dart';
 import 'package:flutterbasedemo/statefull_group_page.dart';
-import 'package:flutterbasedemo/tabbar/TabBarPage.dart';
+import 'package:flutterbasedemo/tabbar/tab_bar_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,11 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter大杂烩',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo'),
+      home: MyHomePage(title: 'Flutter大杂烩'),
     );
   }
 }
@@ -64,7 +64,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
           child: Center(
-            child: Text(title),
+            child: Text(
+              title,
+              style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold),
+            ),
           ),
         ),
       ),
